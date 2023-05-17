@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+} /* 100% = 16px, 62.5%=10px (100*10/16px = 62.5%) */
+
+body {
+    box-sizing: border-box;
+    background-image: url(images/galaxy.gif);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: 3.5rem;
+    margin: 5rem;
+}
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+#mass, #planet {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    border:none;
+}
+
+button {
+    background-color: rgba(138, 136, 136, 0.685);
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border:none;
+}
+
+button:hover {
+    background-color:rgba(222, 220, 220, 0.911);
+    color: black;
+    
+    box-shadow: 0px 0px 20px 5px rgb(144 139 139 / 78%);
+    border: none;
+}
+
+button:active{
+    box-shadow: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    
+    width: 80vw;
+    
+    border-radius: 2.5rem;
+
+    background: rgb(255 255 255 / 7%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+}
+
+.flex-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+.description {
+    display: none;
+}
+
+.descriptionVisible{
+    /*lo de abajo aparecería cuando aprieto el button*/
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color:rgb(138 136 136 / 12%);
+    
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    
+}
+
+#splan {
+    font-weight: 700;
+}
+
+.peso{
+    background-color: rgb(138 136 136 / 15%);
+    color: white;
+    min-width: fit-content;
+    aspect-ratio: 1/1; /*para que ancho y alto guarde igual relación*/
+    height: min-width;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+#maspan{
+    margin-right: 1rem;
+}
+
+
