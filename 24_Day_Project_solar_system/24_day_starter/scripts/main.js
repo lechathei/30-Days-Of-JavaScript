@@ -30,13 +30,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     function changePic(e){
         let img= document.getElementById("planetImage");
+        let name= document.getElementById("plname");
         let optionValue = document.getElementById("planet").value;
         if (optionValue  == "--select planet--"){
-            img.src= `./images/${empty}.png`;
-
-        } else {
-            img.src= `./images/${optionValue}.png`;
+            optionValue='earth'
         }
+        
+        img.src= `./images/${optionValue}.png`;
+        name.innerHTML= optionValue.toUpperCase();
+
+        
 
     }
     function calcForce(e){
@@ -56,12 +59,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         spanWeight.innerHTML = (inputNum * planetInfoNperKg[optionValue]).toFixed(2)
 
     }
-    
+
     let btnSubmit = document.getElementById("button-submit")
     let setOptionValue= document.getElementById("planet");
     btnSubmit.addEventListener("click", changePic);
     btnSubmit.addEventListener("click",calcForce);
     setOptionValue.addEventListener("change", changePic);
+    setOptionValue.addEventListener("change", calcForce);
 
     
 });
