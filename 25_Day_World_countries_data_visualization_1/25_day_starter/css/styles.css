@@ -13,7 +13,7 @@ html {
 
 body {
     box-sizing: border-box;
-    background-image: url(images/galaxy.gif);
+    /* background-image: url(images/galaxy.gif); */
 
     min-height: 100vh;
 
@@ -100,7 +100,6 @@ img{
 }
 
 .descriptionVisible{
-    /*lo de abajo aparecería cuando aprieto el button*/
     width: 100%;
     color: white;
     font-size: 2rem;
@@ -124,7 +123,7 @@ img{
     background-color: rgb(138 136 136 / 15%);
     color: white;
     min-width: fit-content;
-    aspect-ratio: 1/1; /*para que ancho y alto guarde igual relación*/
+    aspect-ratio: 1/1; 
     height: min-width;
     border-radius: 50%;
     display: flex;
